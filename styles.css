@@ -55,30 +55,121 @@ header {
 /*footer*/
 .foot {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: black;
     color: bisque;
+    padding: 40px;
+    
+    
 }
-
+.foot div{
+    border: 2px red;
+    padding: 5px;
+}
+/*g1*/
 
 
 .foot .g1 h2 {
     font-size: 35px;
+    
 }
-
+.foot .g1 h3 {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
 .foot .g6 h2 {
     font-size: 35px;
     grid-column: span 2;
     width: 100%;
     height: 100%;
 }
+/*g2inicio*/
+.foot .g2{
+    display: grid;
+    grid-column: span 2;
+    color: white;
+    row-gap: 0;
+    margin-left: 30px;
+}
+.foot .g2 h5 {
+    font-size: 40px;
+    font-family: "Fjalla One", sans-serif;
+    margin-bottom: -40px;
+    margin-top: 5px;
+    font-size: clamp(24px, 7vw, 34px); 
 
-.foot .g9 p {
     
-    font-size: 6px;
-    text-align: center
+}
+.foot .g2 h6{
+    font-size: 35px;
+    margin-top: none;
+    margin-bottom: 20px;
+    font-family: "Fjalla One", sans-serif;
+
+}
+@media screen and (max-width: 810px) {
+    .foot {
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-items: center;
+        row-gap: 20px; 
+    }
+    .foot .g1,
+    .foot .g2,
+    .foot .g3,
+    .foot .g4 {
+        grid-column: 1 / -1; 
+    }
+    .foot .g3 #contact {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .foot .g3 #contact p{
+        margin-top: 10px;
+        font-family: 6px;
+    }
+     .foot .g1 a {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+    .foot .g2 h5 {
+        margin-bottom: 10px;
+    }
+    .foot .g2 h6 {
+        margin-top: 5px;
+        margin-bottom: 15px;
 }
 
+/*g3*/
+.foot .g3 {
+    display: flex;
+    flex-direction: column;
+}
+#contact a{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+.foot .g3 #contact a p {
+    font-size: 15px;
+    text-decoration: none;
+   
+    
+}
+
+
+.foot .g4 {
+    display: grid;
+    grid-column: span 3;
+    margin-left: 20px;
+}
+.foot .g4 h3{
+    font-size: 80px;
+}
 .foot .g9 a {
     font-size: 9px;
     text-decoration: none;
@@ -88,17 +179,18 @@ header {
 
 #final {
     text-align: center;
+    background-color: black;
+    padding: 20px;
+    
+}
+#final a{
+    text-decoration: none;
+    color: bisque;
+}
+#final p{
+    color:rgb(148, 113, 113);
 }
 
-@media screen and (max-width: 750px) {
-    .foot .g8 p {
-        font-size: 4px;
-    }
-
-    .foot .g8 a {
-        font-size: 5px;
-    }
-}
 
 
 /*banners*/
