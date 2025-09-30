@@ -1,3 +1,13 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+*, *::before, *::after { box-sizing: inherit; }
+img, svg { max-width: 100%; height: auto; display: block; }
+
 /*header1*/
 header {
     background-color: rgb(24, 24, 31)
